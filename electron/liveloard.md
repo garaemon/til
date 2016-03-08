@@ -1,4 +1,4 @@
-# liveloarding on electron
+# liveloading on electron
 see http://qiita.com/Quramy/items/90d61ff37ca1b95a7f6d
 
 ## Setup
@@ -65,3 +65,6 @@ gulp.task('serve', function () {
 ```sh
 $ gulp serve
 ```
+
+# liveloading on electron with JSX
+boilerplate is available on [garaemon/electron-liveload-jsx-sample](https://github.com/garaemon/electron-liveload-jsx-sample).
