@@ -1,3 +1,10 @@
 # til
-Today I learned.
-See [wiki](https://github.com/garaemon/til/wiki)
+Today I (garaemon) learned stuff
+
+## How to build gitbook
+
+```
+npm install -g gitbook-cli
+gitbook install
+gitbook serve
+```

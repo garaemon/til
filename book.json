@@ -1,0 +1,12 @@
+{
+  "language": "ja",
+  "sortedBy": "-",
+  "plugins": [
+    "hide-published-with",
+    "katex",
+    "toc",
+    "git-author",
+    "advanced-emoji",
+    "japanese-support"
+  ]
+}
