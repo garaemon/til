@@ -10,7 +10,25 @@ jobs:
       - run: npm run gitbook-install
       - run: npm run build
 
+  build-and-deploy:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run gitbook-install
+      - run: npm run build
+      - run: git config --global user.name $USERNAME
+      - run: git config --global user.name $EMAIL
+      - run: npm run publish
+
 workflows:
   test:
     jobs:
       - build
+  deploy:
+    jobs:
+      - build-and-deploy:
+          filters:
+            branches:
+              only: master
