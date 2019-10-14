@@ -1,0 +1,33 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "Today I (garaemon) learned stuff",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-git-author": "^1.1.2",
+    "gitbook-plugin-hide-published-with": "^1.0.3",
+    "gitbook-plugin-japanese-support": "^0.0.1",
+    "gitbook-plugin-katex": "^1.1.4",
+    "gitbook-plugin-toc": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gitbook build",
+    "gitbook-install": "gitbook install",
+    "server": "gitbook server",
+    "publish": "gh-pages -d _book"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garaemon/til.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garaemon/til/issues"
+  },
+  "homepage": "https://github.com/garaemon/til#readme"
+}
