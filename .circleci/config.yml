@@ -18,6 +18,8 @@ jobs:
       - run: npm install
       - run: npm run gitbook-install
       - run: npm run build
+      - run: git config --global user.name $USERNAME
+      - run: git config --global user.email $EMAIL
       - run: npm run publish
 
 workflows:
