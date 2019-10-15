@@ -25,7 +25,10 @@ jobs:
 workflows:
   test:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
   deploy:
     jobs:
       - build-and-deploy:
